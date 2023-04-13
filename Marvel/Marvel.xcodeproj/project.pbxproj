@@ -23,6 +23,9 @@
 		25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */; };
 		25CC611329E70D79004B0CC1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC611229E70D79004B0CC1 /* Coordinator.swift */; };
 		25DC043029E71DE20038D568 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */; };
+		25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */; };
+		25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218E29E75F960006D0F8 /* AboutViewController.swift */; };
+		25F2219129E766860006D0F8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2219029E766860006D0F8 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		25CC611229E70D79004B0CC1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
+		25F2218E29E75F960006D0F8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		25F2219029E766860006D0F8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				25990CA229E6312700D2BFE3 /* Home */,
+				25F2219029E766860006D0F8 /* AboutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 		25B96BD729E662190070DF81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				25F2218D29E75F870006D0F8 /* About */,
 				25B96BD829E6622F0070DF81 /* Home */,
 			);
 			path = Controller;
@@ -229,6 +237,7 @@
 		25B96BE129E704D60070DF81 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				25F2218A29E75E390006D0F8 /* About */,
 				25CC611529E71D79004B0CC1 /* Home */,
 				25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */,
 				25CC611229E70D79004B0CC1 /* Coordinator.swift */,
@@ -242,6 +251,22 @@
 				25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		25F2218A29E75E390006D0F8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		25F2218D29E75F870006D0F8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				25F2218E29E75F960006D0F8 /* AboutViewController.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +404,10 @@
 				25B96BDD29E663420070DF81 /* HomeModel.swift in Sources */,
 				25B96BE029E666C10070DF81 /* HomeViewModel.swift in Sources */,
 				25990C7029E615B700D2BFE3 /* ViewController.swift in Sources */,
+				25F2219129E766860006D0F8 /* AboutView.swift in Sources */,
+				25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */,
 				25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */,
+				25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */,
 				2531BFBA29E655B30027B44C /* ViewModelProtocol.swift in Sources */,
 				25990C6C29E615B700D2BFE3 /* AppDelegate.swift in Sources */,
 				25990C6E29E615B700D2BFE3 /* SceneDelegate.swift in Sources */,
