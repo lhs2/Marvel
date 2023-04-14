@@ -17,8 +17,17 @@ class HomeTabBarCoordinator: Coordinator {
 
     func start() {
         let tabBarController = HomeTabBarController()
-        tabBarController.setViewControllers([], animated: false)
+        
+        let aboutViewController = AboutCoordinator()
+        aboutViewController.start()
+        
+        if let aboutVC = aboutViewController.viewController {
+            tabBarController.setViewControllers([aboutVC], animated: false)
+        }
 
-        window.rootViewController = tabBarController
+        let navigationController = UINavigationController.init(rootViewController: tabBarController)
+        navigationController.navigationBar.prefersLargeTitles = true
+        
+        window.rootViewController = navigationController
     }
 }

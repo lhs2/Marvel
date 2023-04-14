@@ -9,9 +9,9 @@ import UIKit
 
 final class AppCoordinator: Coordinator {
 
-    let window: UIWindow?
+    let window: UIWindow
     
-    init(window: UIWindow?) {
+    init(window: UIWindow) {
         self.window = window
     }
 
@@ -20,8 +20,8 @@ final class AppCoordinator: Coordinator {
     }
 
     func showHome() {
-//        let tabBarCoordinator = HomeTabBarCoordinator(window: window, services: serviceHolder)
-//        tabBarCoordinator.start()
+        let tabBarCoordinator = HomeTabBarCoordinator(window: window)
+        tabBarCoordinator.start()
     }
 
 }
