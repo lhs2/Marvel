@@ -12,6 +12,7 @@ enum AboutCollectionViewCellModelType {
 }
 
 struct AboutCollectionViewCellModel {
+    typealias MarginConstraint = (top: CGFloat, trailing: CGFloat, bottom: CGFloat, leading: CGFloat)
     var type: AboutCollectionViewCellModelType = .label
     let text: String
     let fontName: String
@@ -21,7 +22,8 @@ struct AboutCollectionViewCellModel {
     var image: UIImage? = nil
     var isItalic: Bool = false
     
-    ///TODO: implement label constraints 
+    var constraint: MarginConstraint = (top: 0, trailing: 0, bottom: 0, leading: 0)
+    
 }
 
 final class LabelAboutCollectionViewCell: UICollectionViewCell {
@@ -64,12 +66,13 @@ final class LabelAboutCollectionViewCell: UICollectionViewCell {
     
     
     private func updateConstraint() {
-        
-        NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor),
-            trailingAnchor.constraint(equalTo: label.trailingAnchor),
-            bottomAnchor.constraint(equalTo: label.bottomAnchor, constant: 16),
-        ])
+        if let model = model {
+            NSLayoutConstraint.activate([
+                label.topAnchor.constraint(equalTo: topAnchor, constant: model.constraint.top),
+                label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: model.constraint.leading),
+                trailingAnchor.constraint(equalTo: label.trailingAnchor, constant: model.constraint.trailing),
+                bottomAnchor.constraint(equalTo: label.bottomAnchor, constant: model.constraint.bottom),
+            ])
+        }
     }
 }
