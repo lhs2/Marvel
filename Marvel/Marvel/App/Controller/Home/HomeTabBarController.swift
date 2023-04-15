@@ -18,6 +18,10 @@ final class HomeTabBarController: UITabBarController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     private func setupUI() {
         if !isViewLoaded {
             return
