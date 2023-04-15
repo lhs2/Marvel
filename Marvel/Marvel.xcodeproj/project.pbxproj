@@ -15,11 +15,14 @@
 		25990C8329E615BC00D2BFE3 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C8229E615BC00D2BFE3 /* MarvelTests.swift */; };
 		25990C8D29E615BC00D2BFE3 /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C8C29E615BC00D2BFE3 /* MarvelUITests.swift */; };
 		25990C8F29E615BC00D2BFE3 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C8E29E615BC00D2BFE3 /* MarvelUITestsLaunchTests.swift */; };
-		259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCellModel.swift */; };
+		259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift */; };
 		259E3F1C29E865B8002D5EC9 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F1B29E865B8002D5EC9 /* UIFont+Extensions.swift */; };
 		259E3F1F29E86A4D002D5EC9 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F1E29E86A4D002D5EC9 /* AboutViewModel.swift */; };
 		259E3F2629E8B076002D5EC9 /* AboutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F2529E8B076002D5EC9 /* AboutService.swift */; };
 		259E3F2829E8C548002D5EC9 /* AboutLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F2729E8C548002D5EC9 /* AboutLayoutViewModel.swift */; };
+		259E3F2A29E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F2929E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift */; };
+		259E3F2C29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F2B29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift */; };
+		259E3F2E29E911F8002D5EC9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E3F2D29E911F8002D5EC9 /* UIColor+Extensions.swift */; };
 		25B96BDA29E6623D0070DF81 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96BD929E6623D0070DF81 /* HomeTabBarController.swift */; };
 		25B96BDD29E663420070DF81 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96BDC29E663420070DF81 /* HomeModel.swift */; };
 		25B96BE029E666C10070DF81 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96BDF29E666C00070DF81 /* HomeViewModel.swift */; };
@@ -61,11 +64,14 @@
 		25990C8829E615BC00D2BFE3 /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25990C8C29E615BC00D2BFE3 /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		25990C8E29E615BC00D2BFE3 /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAboutCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAboutCollectionViewCell.swift; sourceTree = "<group>"; };
 		259E3F1B29E865B8002D5EC9 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		259E3F1E29E86A4D002D5EC9 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
 		259E3F2529E8B076002D5EC9 /* AboutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutService.swift; sourceTree = "<group>"; };
 		259E3F2729E8C548002D5EC9 /* AboutLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLayoutViewModel.swift; sourceTree = "<group>"; };
+		259E3F2929E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAboutCollectionViewCell.swift; sourceTree = "<group>"; };
+		259E3F2B29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemAboutCollectionViewCell.swift; sourceTree = "<group>"; };
+		259E3F2D29E911F8002D5EC9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		25B96BD929E6623D0070DF81 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		25B96BDC29E663420070DF81 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		25B96BDF29E666C00070DF81 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				259E3F1B29E865B8002D5EC9 /* UIFont+Extensions.swift */,
+				259E3F2D29E911F8002D5EC9 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -305,7 +312,9 @@
 		25F2219229E85EBC0006D0F8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCellModel.swift */,
+				259E3F1829E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift */,
+				259E3F2929E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift */,
+				259E3F2B29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -446,15 +455,18 @@
 				25990C7029E615B700D2BFE3 /* ViewController.swift in Sources */,
 				25F2219129E766860006D0F8 /* AboutView.swift in Sources */,
 				25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */,
+				259E3F2A29E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift in Sources */,
 				259E3F1F29E86A4D002D5EC9 /* AboutViewModel.swift in Sources */,
 				259E3F2629E8B076002D5EC9 /* AboutService.swift in Sources */,
-				259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCellModel.swift in Sources */,
+				259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift in Sources */,
 				25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */,
+				259E3F2E29E911F8002D5EC9 /* UIColor+Extensions.swift in Sources */,
 				25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */,
 				2531BFBA29E655B30027B44C /* ViewModelProtocol.swift in Sources */,
 				25990C6C29E615B700D2BFE3 /* AppDelegate.swift in Sources */,
 				25CC611329E70D79004B0CC1 /* Coordinator.swift in Sources */,
 				259E3F1C29E865B8002D5EC9 /* UIFont+Extensions.swift in Sources */,
+				259E3F2C29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift in Sources */,
 				259E3F2829E8C548002D5EC9 /* AboutLayoutViewModel.swift in Sources */,
 				25DC043029E71DE20038D568 /* HomeTabBarCoordinator.swift in Sources */,
 			);

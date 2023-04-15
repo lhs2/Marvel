@@ -26,9 +26,6 @@ final class AboutViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view.backgroundColor = .white
-        
-
-        
         view.clipsToBounds = true
         
         setupCollectionView()
@@ -53,9 +50,11 @@ final class AboutViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: config)
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(LabelAboutCollectionViewCell.self, forCellWithReuseIdentifier: LabelAboutCollectionViewCell.identifier)
+        collectionView.register(CarouselAboutCollectionViewCell.self, forCellWithReuseIdentifier: CarouselAboutCollectionViewCell.identifier)
         view.addSubview(collectionView)
     }
     
@@ -90,13 +89,31 @@ extension AboutViewController: Coordinated {
 
 extension AboutViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return layoutViewModel.numberOfItems
+        if section == 0 {
+            return layoutViewModel.numberOfAboutItems
+        }
+        return layoutViewModel.numberOfCarouselItems
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = layoutViewModel.itemForIndexPath(indexPath)
-        let labelCell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelAboutCollectionViewCell.identifier, for: indexPath)
-        guard let cell = labelCell as? LabelAboutCollectionViewCell else {
+        if indexPath.section == 0 {
+            let item = layoutViewModel.aboutItemForIndexPath(indexPath)
+            let labelCell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelAboutCollectionViewCell.identifier, for: indexPath)
+            guard let cell = labelCell as? LabelAboutCollectionViewCell else {
+                return labelCell
+            }
+            cell.model = item
+            return cell
+        }
+        
+        let item = layoutViewModel.carouselItemForIndexPath(indexPath)
+        let labelCell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselAboutCollectionViewCell.identifier, for: indexPath)
+        guard let cell = labelCell as? CarouselAboutCollectionViewCell else {
             return labelCell
         }
         cell.model = item

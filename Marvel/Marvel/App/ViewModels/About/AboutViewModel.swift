@@ -22,25 +22,25 @@ final class AboutViewModel: AboutViewModelProtocol {
     }
     
     func fetchItems(completion: @escaping AboutViewModel.GetAboutItemsCompletionBlock) {
-        getItems() { response in
+        getAboutLayourItems() { response in
             switch response {
-            case .success(let items):
-                let layoutViewModel = AboutLayoutViewModel(items: items)
-                completion(.success(layoutViewModel))
+            case .success(let layout):
+                completion(.success(layout))
                 
             case .failure(_):
                 /// TODO: Implement error case
-                fatalError("Not implemented error")
+                fatalError("Not implemented error case")
             }
             
         }
     }
     
-    private func getItems(completion: @escaping (Result<[AboutCollectionViewCellModel], Error>) -> Void) {
-        service.getAboutItems() { response in
-            if let items = response {
-                completion(.success(items))
+    private func getAboutLayourItems(completion: @escaping (Result<AboutLayoutViewModel, Error>) -> Void) {
+        service.getAboutLayoutItems() { response in
+            guard let items = response else {
+                fatalError("not implemented error case")
             }
+            completion(.success(items))
             
         }
     }

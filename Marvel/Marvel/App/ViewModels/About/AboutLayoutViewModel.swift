@@ -8,17 +8,27 @@
 import Foundation
 
 struct AboutLayoutViewModel {
-    var items: [AboutCollectionViewCellModel]
+    var aboutItems: [AboutCollectionViewCellModel]
+    var carouselModel: [CarouselAboutCollectionViewCellModel]
     
-    init(items: [AboutCollectionViewCellModel] = []) {
-        self.items = items
+    init(items: [AboutCollectionViewCellModel] = [], carouselModel: [CarouselAboutCollectionViewCellModel] = []) {
+        self.aboutItems = items
+        self.carouselModel = carouselModel
     }
     
-    var numberOfItems: Int {
-        return items.count
+    var numberOfAboutItems: Int {
+        return aboutItems.count
     }
     
-    func itemForIndexPath(_ indexPath: IndexPath) -> AboutCollectionViewCellModel {
-        return items[indexPath.row]
+    var numberOfCarouselItems: Int {
+        return carouselModel.count
+    }
+    
+    func aboutItemForIndexPath(_ indexPath: IndexPath) -> AboutCollectionViewCellModel {
+        return aboutItems[indexPath.row]
+    }
+    
+    func carouselItemForIndexPath(_ indexPath: IndexPath) -> CarouselAboutCollectionViewCellModel {
+        return carouselModel[indexPath.row]
     }
 }
