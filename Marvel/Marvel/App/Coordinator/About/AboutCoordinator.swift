@@ -10,8 +10,8 @@ import UIKit
 class AboutCoordinator: DefaultCoordinator {
     var viewController: (UIViewController & Coordinated)?
 
-    init() {
-        self.viewController = AboutViewController()
+    init(viewController: (UIViewController & Coordinated) = AboutViewController()) {
+        self.viewController = viewController
     }
 
     func start() {

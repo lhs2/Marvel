@@ -17,6 +17,7 @@ final class AboutViewController: UIViewController {
     init(viewModel: AboutViewModelProtocol = AboutViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        self.title = "About"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,8 +35,6 @@ final class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        parent?.title = "About this app"
-        navigationItem.setValue(true, forKey: "__largeTitleTwoLineMode")
     }
     
     override func viewDidLayoutSubviews() {

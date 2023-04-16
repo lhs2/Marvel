@@ -5,8 +5,6 @@
 //  Created by Luiz Henrique on 13/04/2023.
 //
 
-// "SFProDisplay-Semibold" -
-
 import UIKit.UIFont
 
 extension UIFont {
