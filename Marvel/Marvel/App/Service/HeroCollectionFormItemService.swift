@@ -1,18 +1,18 @@
-//
-//  HeroListService.swift
-//  Marvel
-//
-//  Created by Luiz Henrique on 15/04/2023.
-//
 
-import UIKit
+  HeroCollectionFormItemService.swift
+  Marvel
 
-protocol HeroListServiceLogic {
+  Created by Luiz Henrique on 17/04/2023.
+
+
+import Foundation
+
+protocol HeroCollectionFormItemServiceProtocol {
     func getHeroList(endpoint: EndpointProtocol, completion: @escaping (MarvelAPIResponse<MarvelCharacter>?) -> Void)
 }
 
-final class HeroListService: HeroListServiceLogic {
-   
+final class HeroCollectionFormItemService: HeroCollectionFormItemServiceProtocol {
+    
     func getHeroList(endpoint: EndpointProtocol, completion: @escaping (MarvelAPIResponse<MarvelCharacter>?) -> Void)
     {
         fetchHeroList(with: endpoint) { response in
@@ -46,6 +46,5 @@ final class HeroListService: HeroListServiceLogic {
         client.start(requestOperation: requestOperation)
         
     }
-
+    
 }
-
