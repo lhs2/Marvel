@@ -8,8 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		2531BFBA29E655B30027B44C /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2531BFB929E655B30027B44C /* ViewModelProtocol.swift */; };
+		2544E32E29EAF1CA00901E4D /* HeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E32D29EAF1CA00901E4D /* HeroListViewController.swift */; };
+		2544E33029EAF1D600901E4D /* HeroListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E32F29EAF1D600901E4D /* HeroListModel.swift */; };
+		2544E33229EAF1F500901E4D /* HeroListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E33129EAF1F500901E4D /* HeroListViewModel.swift */; };
+		2544E33429EAF20300901E4D /* HeroListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E33329EAF20300901E4D /* HeroListService.swift */; };
+		2544E33729EAF23C00901E4D /* HeroListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E33629EAF23C00901E4D /* HeroListCoordinator.swift */; };
+		2544E33F29EB1E9900901E4D /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E33E29EB1E9900901E4D /* FormItem.swift */; };
+		2544E34529EB314F00901E4D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E34429EB314F00901E4D /* TitleView.swift */; };
+		2544E34729EB315B00901E4D /* TitleFormItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E34629EB315B00901E4D /* TitleFormItemViewModel.swift */; };
+		2544E35529EB399300901E4D /* HeroFormItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35429EB399300901E4D /* HeroFormItemViewModel.swift */; };
+		2544E35729EC57E200901E4D /* HeroItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35629EC57E200901E4D /* HeroItemCollectionViewCell.swift */; };
+		2544E35A29EC67A100901E4D /* MarvelAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35929EC67A100901E4D /* MarvelAPIResponse.swift */; };
+		2544E35C29EC6A5500901E4D /* MarvelAPIPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35B29EC6A5500901E4D /* MarvelAPIPagination.swift */; };
+		2544E35E29EC6CA900901E4D /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35D29EC6CA900901E4D /* MarvelCharacter.swift */; };
+		2544E36029EC909500901E4D /* MarvelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E35F29EC909500901E4D /* MarvelComic.swift */; };
+		2544E36229EC90F000901E4D /* MarvelSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36129EC90F000901E4D /* MarvelSeries.swift */; };
+		2544E36429EC90F800901E4D /* MarvelStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36329EC90F800901E4D /* MarvelStories.swift */; };
+		2544E36629EC910200901E4D /* MarvelEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36529EC910200901E4D /* MarvelEvents.swift */; };
+		2544E36829EC966200901E4D /* MarvelThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36729EC966200901E4D /* MarvelThumbnail.swift */; };
+		2544E36A29EC9E1D00901E4D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36929EC9E1D00901E4D /* Service.swift */; };
+		2544E36C29ECA06900901E4D /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36B29ECA06900901E4D /* RequestOperation.swift */; };
+		2544E36F29ECA09000901E4D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E36E29ECA09000901E4D /* Configuration.swift */; };
+		2544E37329ECA48D00901E4D /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E37229ECA48D00901E4D /* EndpointProtocol.swift */; };
+		2544E37529ED882C00901E4D /* HeroCollectionFormItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E37429ED882C00901E4D /* HeroCollectionFormItemService.swift */; };
+		2544E37729EDA90600901E4D /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E37629EDA90600901E4D /* Data+Extensions.swift */; };
+		2544E37929EDA9D500901E4D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E37829EDA9D500901E4D /* Date+Extensions.swift */; };
+		2544E37F29EE0BEB00901E4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2544E37E29EE0BEB00901E4D /* Kingfisher */; };
+		2544E38229EFBF8A00901E4D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E38129EFBF8A00901E4D /* LoadingViewController.swift */; };
+		2544E38429EFC91C00901E4D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544E38329EFC91C00901E4D /* UIViewController+Extensions.swift */; };
 		25990C6C29E615B700D2BFE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C6B29E615B700D2BFE3 /* AppDelegate.swift */; };
-		25990C7029E615B700D2BFE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C6F29E615B700D2BFE3 /* ViewController.swift */; };
 		25990C7529E615BC00D2BFE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25990C7429E615BC00D2BFE3 /* Assets.xcassets */; };
 		25990C7829E615BC00D2BFE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25990C7629E615BC00D2BFE3 /* LaunchScreen.storyboard */; };
 		25990C8329E615BC00D2BFE3 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25990C8229E615BC00D2BFE3 /* MarvelTests.swift */; };
@@ -53,9 +80,35 @@
 
 /* Begin PBXFileReference section */
 		2531BFB929E655B30027B44C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		2544E32D29EAF1CA00901E4D /* HeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewController.swift; sourceTree = "<group>"; };
+		2544E32F29EAF1D600901E4D /* HeroListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListModel.swift; sourceTree = "<group>"; };
+		2544E33129EAF1F500901E4D /* HeroListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewModel.swift; sourceTree = "<group>"; };
+		2544E33329EAF20300901E4D /* HeroListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListService.swift; sourceTree = "<group>"; };
+		2544E33629EAF23C00901E4D /* HeroListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListCoordinator.swift; sourceTree = "<group>"; };
+		2544E33E29EB1E9900901E4D /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		2544E34429EB314F00901E4D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		2544E34629EB315B00901E4D /* TitleFormItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFormItemViewModel.swift; sourceTree = "<group>"; };
+		2544E35429EB399300901E4D /* HeroFormItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFormItemViewModel.swift; sourceTree = "<group>"; };
+		2544E35629EC57E200901E4D /* HeroItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		2544E35929EC67A100901E4D /* MarvelAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIResponse.swift; sourceTree = "<group>"; };
+		2544E35B29EC6A5500901E4D /* MarvelAPIPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIPagination.swift; sourceTree = "<group>"; };
+		2544E35D29EC6CA900901E4D /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
+		2544E35F29EC909500901E4D /* MarvelComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelComic.swift; sourceTree = "<group>"; };
+		2544E36129EC90F000901E4D /* MarvelSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelSeries.swift; sourceTree = "<group>"; };
+		2544E36329EC90F800901E4D /* MarvelStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelStories.swift; sourceTree = "<group>"; };
+		2544E36529EC910200901E4D /* MarvelEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelEvents.swift; sourceTree = "<group>"; };
+		2544E36729EC966200901E4D /* MarvelThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelThumbnail.swift; sourceTree = "<group>"; };
+		2544E36929EC9E1D00901E4D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2544E36B29ECA06900901E4D /* RequestOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
+		2544E36E29ECA09000901E4D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2544E37229ECA48D00901E4D /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		2544E37429ED882C00901E4D /* HeroCollectionFormItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionFormItemService.swift; sourceTree = "<group>"; };
+		2544E37629EDA90600901E4D /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		2544E37829EDA9D500901E4D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		2544E38129EFBF8A00901E4D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		2544E38329EFC91C00901E4D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		25990C6829E615B700D2BFE3 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25990C6B29E615B700D2BFE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25990C6F29E615B700D2BFE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25990C7429E615BC00D2BFE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25990C7729E615BC00D2BFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25990C7929E615BC00D2BFE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2544E37F29EE0BEB00901E4D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +170,125 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		2544E32A29EAF18E00901E4D /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				2544E34029EB2F5700901E4D /* HeroList+Form */,
+				2544E32D29EAF1CA00901E4D /* HeroListViewController.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		2544E32B29EAF19400901E4D /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				2544E32F29EAF1D600901E4D /* HeroListModel.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		2544E32C29EAF19A00901E4D /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				2544E33129EAF1F500901E4D /* HeroListViewModel.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		2544E33529EAF23100901E4D /* HeroList */ = {
+			isa = PBXGroup;
+			children = (
+				2544E33629EAF23C00901E4D /* HeroListCoordinator.swift */,
+			);
+			path = HeroList;
+			sourceTree = "<group>";
+		};
+		2544E33C29EB1E4600901E4D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2544E38029EFBF7C00901E4D /* Loading */,
+				2544E33D29EB1E5A00901E4D /* Form */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2544E33D29EB1E5A00901E4D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				2544E33E29EB1E9900901E4D /* FormItem.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		2544E34029EB2F5700901E4D /* HeroList+Form */ = {
+			isa = PBXGroup;
+			children = (
+				2544E34F29EB388100901E4D /* HeroFormItem */,
+				2544E34329EB312C00901E4D /* TitleView */,
+			);
+			path = "HeroList+Form";
+			sourceTree = "<group>";
+		};
+		2544E34329EB312C00901E4D /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				2544E34429EB314F00901E4D /* TitleView.swift */,
+				2544E34629EB315B00901E4D /* TitleFormItemViewModel.swift */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
+		2544E34F29EB388100901E4D /* HeroFormItem */ = {
+			isa = PBXGroup;
+			children = (
+				2544E35429EB399300901E4D /* HeroFormItemViewModel.swift */,
+				2544E35629EC57E200901E4D /* HeroItemCollectionViewCell.swift */,
+			);
+			path = HeroFormItem;
+			sourceTree = "<group>";
+		};
+		2544E36D29ECA07700901E4D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2544E36929EC9E1D00901E4D /* Service.swift */,
+				2544E36B29ECA06900901E4D /* RequestOperation.swift */,
+				2544E36E29ECA09000901E4D /* Configuration.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2544E37029ECA46800901E4D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2544E35929EC67A100901E4D /* MarvelAPIResponse.swift */,
+				2544E35B29EC6A5500901E4D /* MarvelAPIPagination.swift */,
+				2544E35F29EC909500901E4D /* MarvelComic.swift */,
+				2544E35D29EC6CA900901E4D /* MarvelCharacter.swift */,
+				2544E36129EC90F000901E4D /* MarvelSeries.swift */,
+				2544E36329EC90F800901E4D /* MarvelStories.swift */,
+				2544E36529EC910200901E4D /* MarvelEvents.swift */,
+				2544E36729EC966200901E4D /* MarvelThumbnail.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2544E37129ECA47500901E4D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2544E37029ECA46800901E4D /* API */,
+				2544E37229ECA48D00901E4D /* EndpointProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2544E38029EFBF7C00901E4D /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				2544E38129EFBF8A00901E4D /* LoadingViewController.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		25990C5F29E615B700D2BFE3 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +312,10 @@
 		25990C6A29E615B700D2BFE3 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				2544E33C29EB1E4600901E4D /* Components */,
 				25990C9B29E62FC600D2BFE3 /* App */,
 				259E3F1A29E865A8002D5EC9 /* Extensions */,
 				25990C6B29E615B700D2BFE3 /* AppDelegate.swift */,
-				25990C6F29E615B700D2BFE3 /* ViewController.swift */,
 				25990C7429E615BC00D2BFE3 /* Assets.xcassets */,
 				25990C7629E615BC00D2BFE3 /* LaunchScreen.storyboard */,
 				25990C7929E615BC00D2BFE3 /* Info.plist */,
@@ -192,6 +365,7 @@
 		25990CA029E6310600D2BFE3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2544E32C29EAF19A00901E4D /* HeroList */,
 				259E3F1D29E86A42002D5EC9 /* About */,
 				25B96BDE29E666B10070DF81 /* Home */,
 				2531BFB829E655900027B44C /* Protocol */,
@@ -202,6 +376,8 @@
 		25990CA129E6311400D2BFE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2544E37129ECA47500901E4D /* Service */,
+				2544E32B29EAF19400901E4D /* HeroList */,
 				25B96BDB29E663380070DF81 /* Home */,
 			);
 			path = Models;
@@ -219,6 +395,9 @@
 			children = (
 				259E3F1B29E865B8002D5EC9 /* UIFont+Extensions.swift */,
 				259E3F2D29E911F8002D5EC9 /* UIColor+Extensions.swift */,
+				2544E37629EDA90600901E4D /* Data+Extensions.swift */,
+				2544E37829EDA9D500901E4D /* Date+Extensions.swift */,
+				2544E38329EFC91C00901E4D /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,7 +414,10 @@
 		259E3F2229E8A87D002D5EC9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2544E36D29ECA07700901E4D /* Base */,
 				259E3F2529E8B076002D5EC9 /* AboutService.swift */,
+				2544E37429ED882C00901E4D /* HeroCollectionFormItemService.swift */,
+				2544E33329EAF20300901E4D /* HeroListService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -243,6 +425,7 @@
 		25B96BD729E662190070DF81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2544E32A29EAF18E00901E4D /* HeroList */,
 				25F2218D29E75F870006D0F8 /* About */,
 				25B96BD829E6622F0070DF81 /* Home */,
 			);
@@ -276,6 +459,7 @@
 		25B96BE129E704D60070DF81 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				2544E33529EAF23100901E4D /* HeroList */,
 				25F2218A29E75E390006D0F8 /* About */,
 				25CC611529E71D79004B0CC1 /* Home */,
 				25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */,
@@ -335,6 +519,9 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+				2544E37E29EE0BEB00901E4D /* Kingfisher */,
+			);
 			productName = Marvel;
 			productReference = 25990C6829E615B700D2BFE3 /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -407,6 +594,9 @@
 				Base,
 			);
 			mainGroup = 25990C5F29E615B700D2BFE3;
+			packageReferences = (
+				2544E37D29EE0BEB00901E4D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 25990C6929E615B700D2BFE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -449,26 +639,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2544E38429EFC91C00901E4D /* UIViewController+Extensions.swift in Sources */,
+				2544E34729EB315B00901E4D /* TitleFormItemViewModel.swift in Sources */,
 				25B96BDA29E6623D0070DF81 /* HomeTabBarController.swift in Sources */,
+				2544E33F29EB1E9900901E4D /* FormItem.swift in Sources */,
 				25B96BDD29E663420070DF81 /* HomeModel.swift in Sources */,
+				2544E36429EC90F800901E4D /* MarvelStories.swift in Sources */,
+				2544E37929EDA9D500901E4D /* Date+Extensions.swift in Sources */,
+				2544E37729EDA90600901E4D /* Data+Extensions.swift in Sources */,
 				25B96BE029E666C10070DF81 /* HomeViewModel.swift in Sources */,
-				25990C7029E615B700D2BFE3 /* ViewController.swift in Sources */,
+				2544E38229EFBF8A00901E4D /* LoadingViewController.swift in Sources */,
+				2544E32E29EAF1CA00901E4D /* HeroListViewController.swift in Sources */,
 				25F2219129E766860006D0F8 /* AboutView.swift in Sources */,
 				25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */,
 				259E3F2A29E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift in Sources */,
+				2544E36A29EC9E1D00901E4D /* Service.swift in Sources */,
 				259E3F1F29E86A4D002D5EC9 /* AboutViewModel.swift in Sources */,
 				259E3F2629E8B076002D5EC9 /* AboutService.swift in Sources */,
 				259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift in Sources */,
+				2544E33429EAF20300901E4D /* HeroListService.swift in Sources */,
+				2544E35529EB399300901E4D /* HeroFormItemViewModel.swift in Sources */,
+				2544E35A29EC67A100901E4D /* MarvelAPIResponse.swift in Sources */,
+				2544E33229EAF1F500901E4D /* HeroListViewModel.swift in Sources */,
+				2544E36029EC909500901E4D /* MarvelComic.swift in Sources */,
 				25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */,
 				259E3F2E29E911F8002D5EC9 /* UIColor+Extensions.swift in Sources */,
+				2544E33029EAF1D600901E4D /* HeroListModel.swift in Sources */,
 				25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */,
+				2544E35E29EC6CA900901E4D /* MarvelCharacter.swift in Sources */,
 				2531BFBA29E655B30027B44C /* ViewModelProtocol.swift in Sources */,
 				25990C6C29E615B700D2BFE3 /* AppDelegate.swift in Sources */,
+				2544E36629EC910200901E4D /* MarvelEvents.swift in Sources */,
+				2544E36229EC90F000901E4D /* MarvelSeries.swift in Sources */,
+				2544E36C29ECA06900901E4D /* RequestOperation.swift in Sources */,
+				2544E37329ECA48D00901E4D /* EndpointProtocol.swift in Sources */,
+				2544E35C29EC6A5500901E4D /* MarvelAPIPagination.swift in Sources */,
+				2544E36F29ECA09000901E4D /* Configuration.swift in Sources */,
+				2544E36829EC966200901E4D /* MarvelThumbnail.swift in Sources */,
 				25CC611329E70D79004B0CC1 /* Coordinator.swift in Sources */,
 				259E3F1C29E865B8002D5EC9 /* UIFont+Extensions.swift in Sources */,
+				2544E35729EC57E200901E4D /* HeroItemCollectionViewCell.swift in Sources */,
 				259E3F2C29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift in Sources */,
+				2544E34529EB314F00901E4D /* TitleView.swift in Sources */,
 				259E3F2829E8C548002D5EC9 /* AboutLayoutViewModel.swift in Sources */,
+				2544E37529ED882C00901E4D /* HeroCollectionFormItemService.swift in Sources */,
 				25DC043029E71DE20038D568 /* HomeTabBarCoordinator.swift in Sources */,
+				2544E33729EAF23C00901E4D /* HeroListCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +1010,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2544E37D29EE0BEB00901E4D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2544E37E29EE0BEB00901E4D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2544E37D29EE0BEB00901E4D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25990C6029E615B700D2BFE3 /* Project object */;
 }

@@ -17,16 +17,28 @@ class HomeTabBarCoordinator: Coordinator {
 
     func start() {
         let tabBarController = HomeTabBarController()
+        var viewControllers = [UIViewController]()
         
-        let aboutViewController = AboutCoordinator()
-        aboutViewController.start()
+        let heroListCoordinator = HeroListCoordinator()
+        heroListCoordinator.start()
         
-        if let aboutVC = aboutViewController.viewController {
-            tabBarController.setViewControllers([aboutVC], animated: false)
+        if let heroListViewController = heroListCoordinator.viewController {
+            viewControllers.append(heroListViewController)
         }
-
+        
+        let aboutCoordinator = AboutCoordinator()
+        aboutCoordinator.start()
+        
+        if let aboutViewController = aboutCoordinator.viewController {
+            viewControllers.append(aboutViewController)
+        }
+        
+        tabBarController.setViewControllers(viewControllers, animated: false)
+        tabBarController.selectedIndex = 0
+        
+        
         let navigationController = UINavigationController.init(rootViewController: tabBarController)
-        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.setNavigationBarHidden(true, animated: false)
         
         window.rootViewController = navigationController
     }

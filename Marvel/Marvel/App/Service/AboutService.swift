@@ -5,9 +5,8 @@
 //  Created by Luiz Henrique on 13/04/2023.
 //
 
-//import Foundation
 import UIKit.UIColor
-import UIKit
+
 
 protocol AboutServiceLogic {
     func getAboutLayoutItems(completion: @escaping (AboutLayoutViewModel?) -> Void)
@@ -81,7 +80,6 @@ final class AboutService: AboutServiceLogic {
     }
     
     func getCarouselItems() -> [CarouselAboutCollectionViewCellModel] {
-        var carouselItems = [CarouselAboutCollectionViewCellModel]()
         
         let firstMockItem = CarouselItemAboutCollectionViewCellModel(text: "Comic-Con PT Hoodie",
                                                                      image: UIImage(named: "cc-hoodie"))
@@ -90,7 +88,7 @@ final class AboutService: AboutServiceLogic {
         let thirdMockItem = CarouselItemAboutCollectionViewCellModel(text: "Slipknot Hoodie",
                                                                      image: UIImage(named: "slipknot-hoodie"))
         
-        var firstList = CarouselAboutCollectionViewCellModel(type: .collection, items: [firstMockItem,secondtMockItem,thirdMockItem])
+        let firstList = CarouselAboutCollectionViewCellModel(type: .collection, items: [firstMockItem,secondtMockItem,thirdMockItem])
         
         return [firstList]
     }

@@ -19,13 +19,8 @@ final class CarouselItemAboutCollectionViewCell: UICollectionViewCell {
        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 18
-        imageView.layer.shadowColor = UIColor.black.cgColor
-        imageView.layer.shadowOpacity = 0.1
-        imageView.layer.shadowOffset = .zero
-        imageView.layer.shadowRadius = 5
-        imageView.layer.shouldRasterize = true
         imageView.layer.masksToBounds = true
-        imageView.layer.rasterizationScale = UIScreen.main.scale
+
         return imageView
     }()
 

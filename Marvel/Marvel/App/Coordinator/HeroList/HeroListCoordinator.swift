@@ -1,16 +1,16 @@
 //
-//  AboutCoordinator.swift
+//  HeroListCoordinator.swift
 //  Marvel
 //
-//  Created by Luiz Henrique on 12/04/2023.
+//  Created by Luiz Henrique on 15/04/2023.
 //
 
 import UIKit
 
-class AboutCoordinator: DefaultCoordinator {
+final class HeroListCoordinator : DefaultCoordinator {
     var viewController: (UIViewController & Coordinated)?
 
-    init(viewController: (UIViewController & Coordinated) = AboutViewController()) {
+    init(viewController: (UIViewController & Coordinated) = HeroListViewController()) {
         self.viewController = viewController
     }
 

@@ -86,6 +86,6 @@ extension CarouselAboutCollectionViewCell: UICollectionViewDelegate, UICollectio
     }
 //
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 270)
+        return CGSize(width: 155, height: 270)
     }
 }
