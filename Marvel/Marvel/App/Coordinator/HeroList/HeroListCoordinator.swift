@@ -17,4 +17,14 @@ final class HeroListCoordinator : DefaultCoordinator {
     func start() {
         viewController?.setCoordinator(self)
     }
+    
+    func showHeroDetail(from viewModel: HeroItemViewModel) {
+        let heroDetailCoordinator = HeroDetailCoordinator(viewModel: viewModel)
+        heroDetailCoordinator.start()
+        if let heroDetailViewController = heroDetailCoordinator.viewController {
+            viewController?.present(heroDetailViewController, animated: true)
+        }
+        
+
+    }
 }

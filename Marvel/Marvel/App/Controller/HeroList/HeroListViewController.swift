@@ -192,6 +192,14 @@ extension HeroListViewController: UICollectionViewDelegate, UICollectionViewData
             requestItens(isPagination: true)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        if let heroCell = cell as? HeroItemCollectionViewCell,
+           let viewModel = heroCell.getCurrentViewModel() {
+            coordinator?.showHeroDetail(from: viewModel)
+        }
+    }
 
 }
 

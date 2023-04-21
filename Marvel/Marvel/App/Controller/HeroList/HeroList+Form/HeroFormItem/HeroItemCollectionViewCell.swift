@@ -42,9 +42,9 @@ final class HeroItemCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    private var viewModel: HeroItemViewModel?
+    
     private func configureView() {
-//        layer.cornerRadius = 9
-//        layer.masksToBounds = true
         addSubview(imageView)
         addSubview(labelBackgroundView)
         labelBackgroundView.addSubview(label)
@@ -106,7 +106,12 @@ extension HeroItemCollectionViewCell {
             }
         }
         label.text = viewModel.heroName
+        self.viewModel = viewModel
         configureView()
+    }
+    
+    func getCurrentViewModel() -> HeroItemViewModel? {
+        return viewModel
     }
 
 }

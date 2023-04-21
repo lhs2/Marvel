@@ -56,6 +56,10 @@
 		25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */; };
 		25CC611329E70D79004B0CC1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC611229E70D79004B0CC1 /* Coordinator.swift */; };
 		25DC043029E71DE20038D568 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */; };
+		25EDB7F529F2395C0061B385 /* HeroDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7F429F2395C0061B385 /* HeroDetailService.swift */; };
+		25EDB7F829F2398A0061B385 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */; };
+		25EDB7FA29F239A10061B385 /* HeroDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */; };
+		25EDB7FC29F239AD0061B385 /* HeroDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7FB29F239AD0061B385 /* HeroDetailCoordinator.swift */; };
 		25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */; };
 		25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218E29E75F960006D0F8 /* AboutViewController.swift */; };
 		25F2219129E766860006D0F8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2219029E766860006D0F8 /* AboutView.swift */; };
@@ -131,6 +135,10 @@
 		25CC611029E70B1D004B0CC1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		25CC611229E70D79004B0CC1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		25EDB7F429F2395C0061B385 /* HeroDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailService.swift; sourceTree = "<group>"; };
+		25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewModel.swift; sourceTree = "<group>"; };
+		25EDB7FB29F239AD0061B385 /* HeroDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailCoordinator.swift; sourceTree = "<group>"; };
 		25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
 		25F2218E29E75F960006D0F8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		25F2219029E766860006D0F8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -365,6 +373,7 @@
 		25990CA029E6310600D2BFE3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				25EDB7F629F2397E0061B385 /* HeroDetail */,
 				2544E32C29EAF19A00901E4D /* HeroList */,
 				259E3F1D29E86A42002D5EC9 /* About */,
 				25B96BDE29E666B10070DF81 /* Home */,
@@ -418,6 +427,7 @@
 				259E3F2529E8B076002D5EC9 /* AboutService.swift */,
 				2544E37429ED882C00901E4D /* HeroCollectionFormItemService.swift */,
 				2544E33329EAF20300901E4D /* HeroListService.swift */,
+				25EDB7F429F2395C0061B385 /* HeroDetailService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -425,6 +435,7 @@
 		25B96BD729E662190070DF81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				25EDB7F029F239340061B385 /* HeroDetail */,
 				2544E32A29EAF18E00901E4D /* HeroList */,
 				25F2218D29E75F870006D0F8 /* About */,
 				25B96BD829E6622F0070DF81 /* Home */,
@@ -459,6 +470,7 @@
 		25B96BE129E704D60070DF81 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				25EDB7F329F2394D0061B385 /* HeroDetail */,
 				2544E33529EAF23100901E4D /* HeroList */,
 				25F2218A29E75E390006D0F8 /* About */,
 				25CC611529E71D79004B0CC1 /* Home */,
@@ -474,6 +486,30 @@
 				25DC042F29E71DE20038D568 /* HomeTabBarCoordinator.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		25EDB7F029F239340061B385 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */,
+			);
+			path = HeroDetail;
+			sourceTree = "<group>";
+		};
+		25EDB7F329F2394D0061B385 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				25EDB7FB29F239AD0061B385 /* HeroDetailCoordinator.swift */,
+			);
+			path = HeroDetail;
+			sourceTree = "<group>";
+		};
+		25EDB7F629F2397E0061B385 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */,
+			);
+			path = HeroDetail;
 			sourceTree = "<group>";
 		};
 		25F2218A29E75E390006D0F8 /* About */ = {
@@ -648,13 +684,17 @@
 				2544E37929EDA9D500901E4D /* Date+Extensions.swift in Sources */,
 				2544E37729EDA90600901E4D /* Data+Extensions.swift in Sources */,
 				25B96BE029E666C10070DF81 /* HomeViewModel.swift in Sources */,
+				25EDB7F829F2398A0061B385 /* HeroDetailViewController.swift in Sources */,
 				2544E38229EFBF8A00901E4D /* LoadingViewController.swift in Sources */,
+				25EDB7FA29F239A10061B385 /* HeroDetailViewModel.swift in Sources */,
 				2544E32E29EAF1CA00901E4D /* HeroListViewController.swift in Sources */,
 				25F2219129E766860006D0F8 /* AboutView.swift in Sources */,
 				25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */,
 				259E3F2A29E90F3D002D5EC9 /* CarouselAboutCollectionViewCell.swift in Sources */,
 				2544E36A29EC9E1D00901E4D /* Service.swift in Sources */,
+				25EDB7FC29F239AD0061B385 /* HeroDetailCoordinator.swift in Sources */,
 				259E3F1F29E86A4D002D5EC9 /* AboutViewModel.swift in Sources */,
+				25EDB7F529F2395C0061B385 /* HeroDetailService.swift in Sources */,
 				259E3F2629E8B076002D5EC9 /* AboutService.swift in Sources */,
 				259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift in Sources */,
 				2544E33429EAF20300901E4D /* HeroListService.swift in Sources */,
