@@ -35,7 +35,8 @@ class HomeTabBarCoordinator: Coordinator {
         
         tabBarController.setViewControllers(viewControllers, animated: false)
         tabBarController.selectedIndex = 0
-
+        
+        
         let navigationController = UINavigationController.init(rootViewController: tabBarController)
         navigationController.setNavigationBarHidden(true, animated: false)
         

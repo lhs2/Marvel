@@ -17,7 +17,7 @@ final class AboutViewController: UIViewController {
     init(viewModel: AboutViewModelProtocol = AboutViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        self.title = "About"
+        self.tabBarItem.image = UIImage(imageLiteralResourceName: "tab_about")
     }
     
     required init?(coder aDecoder: NSCoder) {

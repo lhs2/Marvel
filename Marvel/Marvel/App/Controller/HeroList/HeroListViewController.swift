@@ -68,7 +68,7 @@ final class HeroListViewController: UIViewController {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = .white
-        self.title = "Hero List"
+        self.tabBarItem.image = UIImage(imageLiteralResourceName: "tab_about")
     }
     
     required init?(coder aDecoder: NSCoder) {
