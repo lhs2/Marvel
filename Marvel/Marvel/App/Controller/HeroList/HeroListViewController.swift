@@ -62,7 +62,7 @@ final class HeroListViewController: UIViewController {
     
         
     var coordinator: HeroListCoordinator?
-    let viewModel: HeroListViewModelProtocol
+    var viewModel: HeroListViewModelProtocol
     
     init(viewModel: HeroListViewModelProtocol = HeroListViewModel()) {
         self.viewModel = viewModel
@@ -84,7 +84,12 @@ final class HeroListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLoading()
         requestItens()
+    }
+    
+    @objc func stop() {
+        viewModel.stopLoading?()
     }
     
     override func viewDidLayoutSubviews() {
@@ -92,6 +97,15 @@ final class HeroListViewController: UIViewController {
         view.layoutIfNeeded()
     }
     
+    private func setupLoading() {
+        viewModel.onLoading = { [weak self] in
+            self?.showLoading()
+        }
+        
+        viewModel.stopLoading = {  [weak self] in
+            self?.stopLoading()
+        }
+    }
         
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
@@ -175,7 +189,7 @@ extension HeroListViewController: UICollectionViewDelegate, UICollectionViewData
         let contentHeight = scrollView.contentSize.height
 
         if (offsetY > contentHeight - scrollView.frame.height * 4) {
-            requestItens()
+            requestItens(isPagination: true)
         }
     }
 
@@ -183,7 +197,7 @@ extension HeroListViewController: UICollectionViewDelegate, UICollectionViewData
 
 /// Request about itens
 extension HeroListViewController {
-    func requestItens() {
+    func requestItens(isPagination: Bool = false) {
         let completionBlock: HeroListViewModel.GetHeroListCompletionBlock = { [weak self] result in
             switch result {
             case .success(let shouldReloadCollectionView):
@@ -194,7 +208,13 @@ extension HeroListViewController {
                 fatalError("error case not implemented")
             }
         }
-        viewModel.fetchItems(completion: completionBlock)
+        
+        if isPagination {
+            viewModel.fetchPaginationItems(completion: completionBlock)
+            return
+        }
+        viewModel.fetchItems(with: "", completion: completionBlock)
+        
         
     }
     
@@ -207,20 +227,24 @@ extension HeroListViewController {
 
 extension HeroListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
         guard let filterName = searchBar.text else {
             return
         }
         viewModel.getHeroList(with: filterName) { [weak self] response in
             if response {
                 self?.reloadCollectionView()
+                self?.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
             }
         }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
         viewModel.getHeroList(with: "") { [weak self] response in
             if response {
                 self?.reloadCollectionView()
+                self?.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
             }
         }
     }

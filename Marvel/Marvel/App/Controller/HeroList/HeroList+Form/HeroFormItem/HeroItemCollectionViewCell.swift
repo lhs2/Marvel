@@ -23,10 +23,9 @@ final class HeroItemCollectionViewCell: UICollectionViewCell {
     private let labelBackgroundView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(red: 0.39, green: 0.08, blue: 0.66, alpha: 1)
-        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        view.clipsToBounds = true
         view.layer.cornerRadius = 9
+        view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        view.backgroundColor = UIColor(red: 0.39, green: 0.08, blue: 0.66, alpha: 0.9)
         return view
     }()
     
@@ -37,21 +36,26 @@ final class HeroItemCollectionViewCell: UICollectionViewCell {
         label.textAlignment = .left
         label.clipsToBounds = true
         label.textColor = .white
-        label.layer.cornerRadius = 9
         label.font = UIFont.get(fontName: "SFProDisplay-Semibold", weight: .semibold, size: 18, isItalic: false)
-        label.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
     
     private func configureView() {
+//        layer.cornerRadius = 9
+//        layer.masksToBounds = true
         addSubview(imageView)
         addSubview(labelBackgroundView)
         labelBackgroundView.addSubview(label)
         updateConstraint()
         layoutIfNeeded()
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+    }
+    
     
     private func updateConstraint() {
         NSLayoutConstraint.activate([

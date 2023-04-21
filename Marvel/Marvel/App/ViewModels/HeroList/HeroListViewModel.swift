@@ -10,24 +10,36 @@ import Kingfisher
 
 protocol HeroListViewModelProtocol {
     var numberOfHeroes: Int { get }
+    var onLoading: (()->Void)? { get set }
+    var stopLoading: (()->Void)? { get set }
     func getItemFor(indexPath: IndexPath) -> HeroItemViewModel
     func getImageFor(_ indexPath: IndexPath) -> KFCrossPlatformImage?
     func setImageFor(image: KFCrossPlatformImage?, for: IndexPath) 
     func getHeroList(with filteredName: String, completion: @escaping (Bool) -> Void)
-    func fetchItems(completion: @escaping HeroListViewModel.GetHeroListCompletionBlock)
+    func fetchItems(with filteredName: String, completion: @escaping HeroListViewModel.GetHeroListCompletionBlock)
+    func fetchPaginationItems(completion: @escaping HeroListViewModel.GetHeroListCompletionBlock)
 }
 
 final class HeroListViewModel: HeroListViewModelProtocol {
-    
     typealias GetHeroListCompletionBlock = (Result<Bool, Error>) -> Void
 
     var marvelCharacters: [HeroItemViewModel] = []
     var offset: Int = 0
     var lastFilteredName: String = ""
     var service: HeroListServiceLogic
-    var isLoading: Bool = false
+    var isLoading: Bool = false {
+        didSet {
+            if isLoading {
+                onLoading?()
+            } else {
+                stopLoading?()
+            }
+        }
+    }
     var canPaginate: Bool = true
     let currentOffset: Int = 0
+    var onLoading: (() -> Void)?
+    var stopLoading: (() -> Void)?
     
     init(_ service: HeroListServiceLogic = HeroListService()) {
         self.service = service
@@ -49,8 +61,18 @@ final class HeroListViewModel: HeroListViewModelProtocol {
         return marvelCharacters[indexPath.row].image = image
     }
     
-    func fetchItems(completion: @escaping HeroListViewModel.GetHeroListCompletionBlock) {
-        getHeroList() {  shouldReload in
+    func fetchItems(with filteredName: String = "", completion: @escaping HeroListViewModel.GetHeroListCompletionBlock) {
+        getHeroList(with: filteredName) {  shouldReload in
+            if shouldReload {
+                completion(.success(true))
+            } else {
+                completion(.success(false))
+            }
+        }
+    }
+    
+    func fetchPaginationItems(completion: @escaping HeroListViewModel.GetHeroListCompletionBlock) {
+        getHeroList(with: lastFilteredName) {  shouldReload in
             if shouldReload {
                 completion(.success(true))
             } else {
@@ -64,7 +86,7 @@ final class HeroListViewModel: HeroListViewModelProtocol {
         guard !isLoading else {
             return
         }
-        
+    
         isLoading = true
         
         if filteredName != lastFilteredName {
