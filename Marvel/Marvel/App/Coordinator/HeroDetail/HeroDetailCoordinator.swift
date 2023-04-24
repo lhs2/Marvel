@@ -20,7 +20,7 @@ final class HeroDetailCoordinator : DefaultCoordinator {
 
     func start() {
         viewController?.setCoordinator(self)
-        if var viewController = viewController as? HeeroDetailViewControllerProtocol {
+        if var viewController = viewController as? HeroDetailViewControllerProtocol {
             viewController.viewModel = self.viewModel
         }
     }

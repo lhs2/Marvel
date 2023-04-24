@@ -60,6 +60,11 @@
 		25EDB7F829F2398A0061B385 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */; };
 		25EDB7FA29F239A10061B385 /* HeroDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */; };
 		25EDB7FC29F239AD0061B385 /* HeroDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7FB29F239AD0061B385 /* HeroDetailCoordinator.swift */; };
+		25EDB7FF29F5FDE00061B385 /* HeaderHeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB7FE29F5FDE00061B385 /* HeaderHeroDetailsViewController.swift */; };
+		25EDB80329F622D40061B385 /* HorizontalCollectionHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB80229F622D40061B385 /* HorizontalCollectionHeroDetailViewController.swift */; };
+		25EDB80529F622E30061B385 /* VerticalCollectionHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB80429F622E30061B385 /* VerticalCollectionHeroDetailViewController.swift */; };
+		25EDB80729F626E50061B385 /* HorizontalCellCollectionHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB80629F626E50061B385 /* HorizontalCellCollectionHeroDetailViewController.swift */; };
+		25EDB80929F626F70061B385 /* VerticalCellCollectionHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDB80829F626F70061B385 /* VerticalCellCollectionHeroDetailViewController.swift */; };
 		25F2218C29E75E4A0006D0F8 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */; };
 		25F2218F29E75F960006D0F8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2218E29E75F960006D0F8 /* AboutViewController.swift */; };
 		25F2219129E766860006D0F8 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2219029E766860006D0F8 /* AboutView.swift */; };
@@ -139,6 +144,11 @@
 		25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewModel.swift; sourceTree = "<group>"; };
 		25EDB7FB29F239AD0061B385 /* HeroDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailCoordinator.swift; sourceTree = "<group>"; };
+		25EDB7FE29F5FDE00061B385 /* HeaderHeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHeroDetailsViewController.swift; sourceTree = "<group>"; };
+		25EDB80229F622D40061B385 /* HorizontalCollectionHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionHeroDetailViewController.swift; sourceTree = "<group>"; };
+		25EDB80429F622E30061B385 /* VerticalCollectionHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionHeroDetailViewController.swift; sourceTree = "<group>"; };
+		25EDB80629F626E50061B385 /* HorizontalCellCollectionHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCellCollectionHeroDetailViewController.swift; sourceTree = "<group>"; };
+		25EDB80829F626F70061B385 /* VerticalCellCollectionHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCellCollectionHeroDetailViewController.swift; sourceTree = "<group>"; };
 		25F2218B29E75E4A0006D0F8 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
 		25F2218E29E75F960006D0F8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		25F2219029E766860006D0F8 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
@@ -491,7 +501,9 @@
 		25EDB7F029F239340061B385 /* HeroDetail */ = {
 			isa = PBXGroup;
 			children = (
+				25EDB7FD29F5FDD00061B385 /* Cells */,
 				25EDB7F729F2398A0061B385 /* HeroDetailViewController.swift */,
+				25EDB7FE29F5FDE00061B385 /* HeaderHeroDetailsViewController.swift */,
 			);
 			path = HeroDetail;
 			sourceTree = "<group>";
@@ -510,6 +522,17 @@
 				25EDB7F929F239A10061B385 /* HeroDetailViewModel.swift */,
 			);
 			path = HeroDetail;
+			sourceTree = "<group>";
+		};
+		25EDB7FD29F5FDD00061B385 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25EDB80429F622E30061B385 /* VerticalCollectionHeroDetailViewController.swift */,
+				25EDB80829F626F70061B385 /* VerticalCellCollectionHeroDetailViewController.swift */,
+				25EDB80229F622D40061B385 /* HorizontalCollectionHeroDetailViewController.swift */,
+				25EDB80629F626E50061B385 /* HorizontalCellCollectionHeroDetailViewController.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		25F2218A29E75E390006D0F8 /* About */ = {
@@ -677,6 +700,7 @@
 			files = (
 				2544E38429EFC91C00901E4D /* UIViewController+Extensions.swift in Sources */,
 				2544E34729EB315B00901E4D /* TitleFormItemViewModel.swift in Sources */,
+				25EDB80529F622E30061B385 /* VerticalCollectionHeroDetailViewController.swift in Sources */,
 				25B96BDA29E6623D0070DF81 /* HomeTabBarController.swift in Sources */,
 				2544E33F29EB1E9900901E4D /* FormItem.swift in Sources */,
 				25B96BDD29E663420070DF81 /* HomeModel.swift in Sources */,
@@ -698,9 +722,11 @@
 				259E3F2629E8B076002D5EC9 /* AboutService.swift in Sources */,
 				259E3F1929E85F9D002D5EC9 /* LabelAboutCollectionViewCell.swift in Sources */,
 				2544E33429EAF20300901E4D /* HeroListService.swift in Sources */,
+				25EDB80329F622D40061B385 /* HorizontalCollectionHeroDetailViewController.swift in Sources */,
 				2544E35529EB399300901E4D /* HeroFormItemViewModel.swift in Sources */,
 				2544E35A29EC67A100901E4D /* MarvelAPIResponse.swift in Sources */,
 				2544E33229EAF1F500901E4D /* HeroListViewModel.swift in Sources */,
+				25EDB80929F626F70061B385 /* VerticalCellCollectionHeroDetailViewController.swift in Sources */,
 				2544E36029EC909500901E4D /* MarvelComic.swift in Sources */,
 				25CC611129E70B1D004B0CC1 /* AppCoordinator.swift in Sources */,
 				259E3F2E29E911F8002D5EC9 /* UIColor+Extensions.swift in Sources */,
@@ -721,10 +747,12 @@
 				2544E35729EC57E200901E4D /* HeroItemCollectionViewCell.swift in Sources */,
 				259E3F2C29E9118D002D5EC9 /* CarouselItemAboutCollectionViewCell.swift in Sources */,
 				2544E34529EB314F00901E4D /* TitleView.swift in Sources */,
+				25EDB7FF29F5FDE00061B385 /* HeaderHeroDetailsViewController.swift in Sources */,
 				259E3F2829E8C548002D5EC9 /* AboutLayoutViewModel.swift in Sources */,
 				2544E37529ED882C00901E4D /* HeroCollectionFormItemService.swift in Sources */,
 				25DC043029E71DE20038D568 /* HomeTabBarCoordinator.swift in Sources */,
 				2544E33729EAF23C00901E4D /* HeroListCoordinator.swift in Sources */,
+				25EDB80729F626E50061B385 /* HorizontalCellCollectionHeroDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

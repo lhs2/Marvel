@@ -10,5 +10,5 @@ import Foundation
 struct MarvelComic: Codable {
     let id: Int?
     let title: String?
-    let thumbnail: [MarvelThumbnail]?
+    let thumbnail: MarvelThumbnail?
 }
